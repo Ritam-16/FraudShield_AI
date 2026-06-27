@@ -1,0 +1,12 @@
+[project]
+name = "pythonproject1"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.138.1",
+    "matplotlib>=3.11.0",
+    "numpy>=2.5.0",
+    "pandas>=3.0.3",
+    "scikit-learn>=1.9.0",
+    "xgboost>=3.3.0",
+]
