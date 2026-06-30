@@ -3,9 +3,10 @@ from fastapi.responses import RedirectResponse
 
 from src.api.routes import router
 
+
 app = FastAPI(
     title="FraudShield AI API",
-    description="Fraud detection API using ML, Rule Engine and Risk Engine.",
+    description="Fraud detection API using ML, rule engine, risk engine, and AI assistant.",
     version="1.0.0"
 )
 

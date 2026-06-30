@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class TransactionRequest(BaseModel):
@@ -17,3 +17,17 @@ class FraudResponse(BaseModel):
     reasons: list[str]
     risk_score: float
     risk_level: str
+
+
+class AssistantResponse(BaseModel):
+    severity: str
+    recommended_action: str
+    user_title: str
+    user_message: str
+    next_steps: list[str]
+    admin_summary: str
+    llm_used: bool
+
+
+class FraudAssistantResponse(FraudResponse):
+    assistant: AssistantResponse
